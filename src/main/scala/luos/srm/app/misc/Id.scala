@@ -17,4 +17,6 @@ object Identified {
     def by( o : Any ): Id = {
         Id( o.getClass.getCanonicalName + "-" + Random.nextInt() )
     }
+
+    def none : Id = Id( "noid" )
 }

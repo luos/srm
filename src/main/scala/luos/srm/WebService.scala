@@ -13,7 +13,7 @@ class WebService extends Actor with WebRoutes {
 
     def receive = runRoute( route )
 
-    def a = entityFormat
+    //def a = entityFormat
 }
 
 trait WebRoutes extends  FrontendService with ApiService{

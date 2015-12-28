@@ -1,0 +1,13 @@
+type: pictures
+entity:
+  id: me
+includeFiles:
+  - "*.jpg"
+  - "*.png"
+name: Progress Pics
+tags: 
+  - tag1
+  - "sub/tag2"
+autoEvent:
+  - grouped: sameday
+
