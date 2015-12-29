@@ -73,7 +73,7 @@ class YamlReaderTest extends Specification {
         "load a simple non root object" in {
             val fileContent : String =
                 """
-                  |entity:
+                  |enti     ty:
                   |  name: Jonathan
                   |  age: 200
                   |more: 1
@@ -82,7 +82,7 @@ class YamlReaderTest extends Specification {
             val obj = reader.loadString( fileContent )
             val entity = obj.getObject( "entity" ).get
             entity.get("name").get === StringValue("Jonathan" )
-            //entity.get("age").get === IntValue( 200 )
+            entity.get("age").get === IntValue( 200 )
         }
 
     }
